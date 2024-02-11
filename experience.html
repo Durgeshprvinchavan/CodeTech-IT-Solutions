@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppiens', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 81px;
+            background-color: rgb(38, 38, 64);
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+        body {
+            background-color: #0D1B2B;
+            overflow-x: hidden;
+            font-family: roboto;
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+        }
+
+        .flex {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+        }
+
+        .slider-wrapper div {
+            position: relative;
+        }
+
+        .slider-wrapper {
+            margin-top: 15vw;
+            margin-left: 11vw;
+        }
+
+        .slide-image {
+            height: 24vw;
+        }
+
+        .slide-image img {
+            width: 24vw;
+            cursor: pointer;
+        }
+
+        .slide-content {
+            width: 65vw;
+            color: #ffffff;
+            padding: 1vw 30vw 1vw 4vw;
+        }
+
+        .slide-date {
+            color: #0a8acb;
+            font-size: 1.1vw;
+            font-weight: 400;
+            letter-spacing: 0.1vw;
+            padding-bottom: 1.4vw;
+        }
+
+        .slide-title {
+            font-size: 1.2vw;
+            font-weight: 400;
+            letter-spacing: 0.1vw;
+            line-height: 1.55vw;
+            padding-bottom: 1.8vw;
+        }
+
+        .slide-text {
+            font-size: 0.80vw;
+            line-height: 1.2vw;
+            opacity: 0.8;
+            padding-bottom: 5vw;
+        }
+
+        .slide-more {
+            font-weight: 400;
+            letter-spacing: 0.1vw;
+            float: left;
+            font-size: 0.9vw;
+        }
+
+        .slide-bullet {
+            width: 0.5vw;
+            height: 0.5vw;
+            background-color: #0b8bcc;
+            border-radius: 200%;
+            position: relative;
+            margin-left: 1.2vw;
+        }
+
+        .slide-nav {
+            margin-left: 64vw;
+            margin-top: -5.5vw;
+        }
+
+        div.overlay-blue {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 150px;
+            transition: 0.5s ease all;
+        }
+
+        div.overlay-blue:hover {
+            background-color: rgba(13, 27, 43, 0.5);
+        }
+
+        .arrows {
+            width: 3.5vw;
+            margin-top: -5.8vw;
+            margin-left: 72vw;
+            position: relative;
+        }
+
+        .arrow {
+            display: inline-block;
+            position: absolute;
+            width: 1.2vw;
+            height: 1.2vw;
+            background: transparent;
+            text-indent: -9999px;
+            border-top: 0.15vw solid #fff;
+            border-left: 0.15vw solid #fff;
+            transition: all .1s ease-in-out;
+            text-decoration: none;
+            color: transparent;
+        }
+
+        .arrow:hover {
+            border-color: #0A8ACB;
+            border-width: 0.25vw;
+        }
+
+        .arrow:before {
+            display: block;
+            height: 200%;
+            width: 200%;
+            margin-left: -50%;
+            margin-top: -50%;
+            content: "";
+            transform: rotate(45deg);
+        }
+
+        .arrow.prev {
+            transform: rotate(-45deg);
+            left: 0;
+        }
+
+        .arrow.next {
+            transform: rotate(135deg);
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <h2>Experience</h2>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slider-wrapper flex">
+                <div class="slide flex">
+                    <div class="slide-image slider-link prev"><img src="/img/html.png">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date">2010-2012.</div>
+                        <div class="slide-title">My Experience in HTML.</div>
+                        <div class="slide-text">An HTML developer job description outlines what an employer expects from this role. These job
+                            descriptions give details of qualifications, skills and responsibilities necessary to accomplish
+                            HTML developer objectives. Reviewing the job descriptions carefully can help you understand the
+                            job requirements and what the company expects. This can assist you during the interview process. </div>
+                        <div class="slide-more">READ MORE</div>
+                    </div>
+                </div>
+                <div class="slide flex">
+                    <div class="slide-image slider-link next"><img src="/img/node.png">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date">2013-2015.</div>
+                        <div class="slide-title">My Experience in Node.js</div>
+                        <div class="slide-text"> A Node.js developer is responsible for writing server-side web application logic in JavaScript
+                            and/or variants of it, such as CoffeeScript, IcedCoffeeScript, etc. Node.js developers usually
+                            develop back-end components, connect the application with the other (often third-party) web
+                            services, and support the front-end developers by integrating their work with the Node.js
+                            application </div>
+                        <div class="slide-more">READ MORE</div>
+                    </div>
+                </div>
+                <div class="slide flex">
+                    <div class="slide-image slider-link next"><img src="/img/mongo.png">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date">2016-2018.</div>
+                        <div class="slide-title">My Experience in MongoDB.</div>
+                        <div class="slide-text">MongoDB has tens of thousands of customers in more than 100 countries. The MongoDB database
+                            platform has been downloaded hundreds of millions of times since 2007, and there have been
+                            millions of builders trained through MongoDB University courses.MongoDB empowers innovators to
+                            create, transform, and disrupt industries by unleashing the power of software and data </div>
+                        <div class="slide-more">READ MORE</div>
+                    </div>
+                </div>
+                <div class="slide flex">
+                    <div class="slide-image slider-link next"><img src="/img/developer.png">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date">2019-2021.</div>
+                        <div class="slide-title">My Experience in Full Stack Developer.</div>
+                        <div class="slide-text">A full stack developer requires skills such as Front-end Languages and Frameworks (HTML, CSS,
+                            JavaScript), Backend Technologies and Frameworks (NodeJS, ExpressJS, Django, Flask, C++),
+                            Database Management Systems (MySQL, SQL SERVER and PostgreSQL, MongoDB, and Oracle Database),
+                            Version Control, and Web Hosting Platforms! </div>
+                        <div class="slide-more">READ MORE</div>
+                    </div>
+                </div>
+                <div class="slide flex">
+                    <div class="slide-image slider-link next"><img src="/img/cloud computing.png">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date">2022-2025.</div>
+                        <div class="slide-title">My Experience in Cloud Computing.</div>
+                        <div class="slide-text">Cloud computing touches many aspects of modern life, and the need for cloud professionals is
+                            great. Learn about the necessary skills and education for a cloud computing career.Cloud
+                            computing provides an environment where an organization doesn't need to run its own hardware.
+                            Instead, it benefits from elastic, on-demand compute and storage capacity billed on a
+                            consumption basis. </div>
+                        <div class="slide-more">READ MORE</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="arrows">
+                <a href="#" title="Previous" class="arrow slider-link prev"></a>
+                <a href="#" title="Next" class="arrow slider-link next"></a>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="experience.js"></script>
+    </main>
+
+</body>
+
+</html>
