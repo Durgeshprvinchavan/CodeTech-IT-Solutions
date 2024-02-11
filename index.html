@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durgesh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 32);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 81px;
+            background-color: rgb(38, 38, 64);
+        }
+
+        div ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        div ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        div ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        div ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.2rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #8974ee;
+            height: 0.5px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.02rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 55px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+
+            font-size: 2rem;
+
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+
+            padding: 12px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 54px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 32px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 84px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #111;
+        }
+
+        .footer-container {
+            width: 100%;
+            padding: 70px 30px 20px;
+        }
+
+        .socialIcons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .socialIcons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        .socialIcons a i {
+            font-size: 2em;
+            color: black;
+            opacity: 0.9;
+        }
+
+        .socialIcons a:hover {
+            background-color: black;
+            transition: 0.5s;
+        }
+
+        .socialIcons a:hover i {
+            color: white;
+            transition: 0.5s;
+        }
+
+        .footerNav {
+            margin: 30px 0;
+        }
+
+        .footerNav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footerNav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .footerNav ul li a:hover {
+
+            opacity: 1;
+        }
+
+        .footerBottom {
+            background-color: #2f2468;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .designer {
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+        }
+
+        .thirdSection {
+            max-width: 50vw;
+            margin: auto;
+            font-family: 'Poppins', sans-serif;
+            }
+
+            .leftthirdSection{
+                padding: 20px 0;
+            }
+
+
+        .skill {
+            margin-bottom: 15px;
+          }
+          
+          .skill-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+          
+          .skill-bar {
+            height: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+          }
+
+         
+            
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Durgesh's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="project.html">projects</a></li>
+                    <li><a href="contact_me.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Durgesh</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Resume.docx" download="Resume.docx">
+                        <button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/Durgeshprvinchavan" target="_blank">
+                        <button class="btn">Vist Github</button></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="/img/D.png.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray"> what I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="/img/html.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        An HTML developer job description outlines what an employer expects from this role. These job
+                        descriptions give details of qualifications, skills and responsibilities necessary to accomplish
+                        HTML developer objectives. Reviewing the job descriptions carefully can help you understand the
+                        job requirements and what the company expects. This can assist you during the interview process.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="/img/node.png" alt="">
+                    <div class="vertical-title">
+                        Node.js (2013-2015)
+                    </div>
+                    <div class="vertical-desc">
+                        A Node.js developer is responsible for writing server-side web application logic in JavaScript
+                        and/or variants of it, such as CoffeeScript, IcedCoffeeScript, etc. Node.js developers usually
+                        develop back-end components, connect the application with the other (often third-party) web
+                        services, and support the front-end developers by integrating their work with the Node.js
+                        application
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="/img/mongo.png" alt="">
+                    <div class="vertical-title">
+                        MongoDB (2016-2018)
+                    </div>
+                    <div class="vertical-desc">
+                        MongoDB has tens of thousands of customers in more than 100 countries. The MongoDB database
+                        platform has been downloaded hundreds of millions of times since 2007, and there have been
+                        millions of builders trained through MongoDB University courses.MongoDB empowers innovators to
+                        create, transform, and disrupt industries by unleashing the power of software and data
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="/img/developer.png" alt="">
+                    <div class="vertical-title">
+                        Full Stack Developer (2019-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        A full stack developer requires skills such as Front-end Languages and Frameworks (HTML, CSS,
+                        JavaScript), Backend Technologies and Frameworks (NodeJS, ExpressJS, Django, Flask, C++),
+                        Database Management Systems (MySQL, SQL SERVER and PostgreSQL, MongoDB, and Oracle Database),
+                        Version Control, and Web Hosting Platforms!
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="/img/cloud computing.png" alt="">
+                    <div class="vertical-title">
+                        cloud computing (2022-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Cloud computing touches many aspects of modern life, and the need for cloud professionals is
+                        great. Learn about the necessary skills and education for a cloud computing career.Cloud
+                        computing provides an environment where an organization doesn't need to run its own hardware.
+                        Instead, it benefits from elastic, on-demand compute and storage capacity billed on a
+                        consumption basis.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdSection">
+            <h1>My Skills</h1>
+            <div class="leftthirdSection">
+                <div class="skill">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar" style="width: 80%;"></div>
+                  </div>
+                
+                  <div class="skill">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar" style="width: 75%;"></div>
+                  </div>
+                  <div class="skill">
+                    <div class="skill-name">NODEJS</div>
+                    <div class="skill-bar" style="width: 45%;"></div>
+                  </div>
+                
+                  <div class="skill">
+                    <div class="skill-name">PHP</div>
+                    <div class="skill-bar" style="width: 50%;"></div>
+                  </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/durgesh.chavan.773124"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/durgeshchavan___dc/?next=%2F"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/Durgeshcha92608"><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href="https://www.youtube.com/channel/UCfv8C_SNFwZreRyxc5gpsGA"><i
+                        class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact_me.html">Contact ME</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                </ul>
+            </div>
+            <div class="footerBottom">
+                <p> copyright &copy;2024; Designed by <span class="designer">Durgesh</span></p>
+            </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Cloud Computing', 'web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
